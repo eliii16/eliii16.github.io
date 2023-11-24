@@ -1,1 +1,14 @@
+div {
+	margin: 20px 5px;
+	padding: 10px;
+	background-color: gray;
+	border: 4px solid black;
+}
 
+.box {
+	background-color: rosa;
+}
+
+#neu {
+	background-color: blue;
+}
