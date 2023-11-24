@@ -1,11 +1,13 @@
+}
+
 .box {
-	background-color: rosa;
+	background-color: red;
 }
 
 #neu {
 	background-color: blue;
 }
 
-h1 {
-	font-family: "Bagel Fat One", "Times New Roman", sans-serif;
+#neu.box{
+	background-color: black;
 }
