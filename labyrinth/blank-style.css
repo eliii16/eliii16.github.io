@@ -1,15 +1,8 @@
-
-.box {
-	background-color:rosa ;
+div {
+	background-color: pink;
+	
 }
-
-#neu {
-	background-color: blue;
-}
-
-#neu.box{
-	background-color: black;
-}
+;
 
 [href] {
 	color: red;
