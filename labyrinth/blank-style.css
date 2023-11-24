@@ -2,10 +2,10 @@ div {
 background-color: pink;
 }
 
- <li><div>Eintrag 1 	Eintrag 2 	Eintrag 3</div></li>
- <li><div>Eintrag 1 	Eintrag 2 	Eintrag 3</div></li>
- <li><div>Eintrag 1 	Eintrag 2 	Eintrag 3</div></li>
+ 
 
 h1 {
 	font-family: "Bagel Fat One", "Times New Roman", sans-serif;
 }
+
+table (border: 2px solid black;)
