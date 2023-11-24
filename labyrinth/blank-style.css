@@ -10,3 +10,7 @@
 #neu.box{
 	background-color: black;
 }
+
+[href] {
+	color: red;
+}
