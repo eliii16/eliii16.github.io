@@ -1,11 +1,47 @@
-div {
-background-color: pink;
+{ 
+background-color: rosa;
 }
 
- 
-
-h1 {
-	font-family: "Bagel Fat One", "Times New Roman", sans-serif;
+div p
+{
+color: black;
 }
 
-table (border: 2px solid black;)
+ul
+{
+color: #FF3333;
+}
+
+[href]
+{
+color: #FF3333;
+}
+
+h1
+{
+text-align: center;
+color: #FF33F3;
+} 
+
+h2
+{
+text-align: center;
+color: #FF33F3;
+} 
+
+h3
+{
+text-align: center;
+color: #FF33F3;
+} 
+
+h4
+{
+text-align: center;
+color: #FF33F3;
+} 
+
+table
+{
+color: #0F8313;
+}
