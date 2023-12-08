@@ -1,23 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> Fake Seite </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+ 
+    .container {
+      width: 100%;
+      height: 400px;
+      position: relative;
+    }
+ 
+    .image {
+      float: left;
+      width: 50%;
+      height: 100%;
+    }
+ 
+    .text {
+      float: left;
+      width: 50%;
+      height: 100%;
+      position: relative;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+ 
+    .disclaimer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
 </style>
 </head>
 <body>
-<img src="https://www.google.com/logos/doodles/2023/seasonal-holidays-2023-6753651837110165-6752733080612631-cst.gif">
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/CornerSymbol.png">
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/Searchbar.png">
-<!-- Dieser Teil gilt der Optionalen Aufgabe und kann nach Bedarf gelöscht werden
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol1.png">
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol2.png">
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol3.png">
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol4.png">
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol5.png">
-<div style="padding: 10px; border: 1px solid gray; border-radius: 5px;" > </div>
--->
-
+<div class="container">
+<div class="image">
+<!-- Hier das Bild einfügen -->
+<img src="pfad/zu/deinem/bild.jpg" alt="Bildbeschreibung">
+</div>
+<div class="text">
+<!-- Hier den Text einfügen -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+</div>
+<div class="disclaimer">
+      Diese Seite ist nur zu Übungszwecken und nicht echt.
+</div>
+</div>
 </body>
 </html>
-	
+
+
