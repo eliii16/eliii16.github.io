@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google - Fake Page</title>
+    <title>Fake Search</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,8 +17,13 @@
             margin: 0 auto;
         }
 
-        #google-logo {
+        #custom-logo {
             margin-bottom: 20px;
+            /* Hier können Sie Ihr individuelles Logo einfügen */
+            background-image: url('link_zum_logo.jpg');
+            background-size: cover;
+            width: 200px;
+            height: 80px;
         }
 
         #search-box {
@@ -38,26 +43,10 @@
 </head>
 <body>
     <div id="search-container">
-        <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png" alt="Google Logo">
-        <input type="text" id="search-box" placeholder="Google durchsuchen...">
+        <div id="custom-logo"></div>
+        <input type="text" id="search-box" placeholder="Suchen...">
         <br>
-        <button id="search-button">Google-Suche</button>
+        <button id="search-button">Suche</button>
     </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
