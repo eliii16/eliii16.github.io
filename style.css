@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="de">
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Filme& Serien Empfehlungen</title>   
-  </head>
-  <body>
-    <ul>
-      <li><a href="Netflix.html">Netflix.html</a></li>
-      <li><a href="PrimeVideo.html">PrimeVideo.html</a> </li>
-       <li><a href="Disney+.html">Disey+.html</a> </li>
-    </ul>
-
-    <style>
+<body>
+  
      nav{
        height: 90px;
        width: 100px;
@@ -31,31 +18,8 @@
          font-size:24px;
          color:#333
          text-decoration:none;
-         
+        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-</style>
-
- 
-
-  
 
 </body>
 
