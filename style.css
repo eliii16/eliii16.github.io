@@ -1,4 +1,4 @@
-body {
+<body> {
   backgrounf-color:blue;
 }
 h1{
@@ -19,3 +19,4 @@ site-nav-list li a{
   text-decoration:none;
   color: #333;
 }
+</body>
