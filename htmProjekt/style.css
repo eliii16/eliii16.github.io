@@ -6,16 +6,16 @@ h1{
   color:white;
   padding:5px;
 }
-site-nav-list{
+.site-nav-list {
   backgrounf:yellow;
   list-style-type: none;
   padding:5px;
 }
-site-nav-list li{
+.site-nav-list li {
   display:inline;
   margin-right:5px;
 }
-site-nav-list li a{
+.site-nav-list li a {
   text-decoration:none;
   color: #333;
 }
