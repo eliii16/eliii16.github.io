@@ -1,18 +1,18 @@
 
 <style>
 .site-nav-list{
-background-color:#f5f5f5;
-list-style-type:none;
-padding:5px;
+background-color: #f5f5f5;
+list-style-type: none;
+padding: 5px;
 }
 
-.site-nav-list{
-display:inline;
-margin-right:5px;
+.site-nav-list li{
+display: inline;
+margin-right: 5px;
 }
 
 .site-nav-lst a{
-text-decoration:none;
+text-decoration: none;
 color: #333;
   {
 
