@@ -1,108 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Filme& Serien Empfehlungen</title>  
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<head>
+
+    <title>Filme& Serien Empfehlungen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <style>
-
-body {
-font-family: 'Bebas Neue', sans-serif;
-padding-right: 100px;
-padding-left: 100px;
-
-}
-      
-  .bild1{
-width: 700px;
-height: 500px;
-float: left;
-vertical-align:top;
-    
-}    
-
-.Überschrift1 {
-color:red;
-font-size: 50px;
-font-weight: 300;
-}
-
-    
-  nav {
-   height: 90px;
-   width: 100%;
-   background-color: black;
-   text-align: right;
-  }
-
-    nav ul { 
-    list-style: none;
-     margin: 0;
-     padding: 0;
-     display: inline-block;
-    }
-      
-     nav li { 
-      display: inline-block;
-      margin-top: 30px;
-      margin-right: 40px;
-     }
-
-nav li a{ 
-  font-size: 30px;
-   color: red;
-   text-decoration: none;
-}
-
-      a:hover {
-      text-decoration: underline;
-      }
-
-.text {
-    display: inline-block;
-    float: right;
-    margin-right: 50px;
-    font-size: 24px; 
-}
-    </style> 
-  
-     </head>
-    <body>
-    
-
-
-<h2 class="Überschrift1">
- Filme& Serien Empfehlungen 
-  </h2>
-
-<nav>
-  <ul>
-   <li><a  href="Netflix.html">Netflix</a></li>
-   <li>><a href="PrimeVideo.html">PrimeVideo</a></li>
-   <li><a href="Disney+.html">Disney+</a></li>
-
-  </ul>
-</nav>
-    
-    <div class="bild1">
-    <img class="bild1" src="https://i.wfcdn.de/teaser/1920/48903.jpg"> 
-    </div>
-  
-
-
-      <p class="text">
-     Auf meiner Seite findet ihr empfehlungen zu Filme& Serien wenn ihr nicht weiter wisst.<br>
-     Von Komödien bis hin zu horrorfilme und Serien.<br>
-     Ob ihr Filme&Serien von Netlix, PrimeVideo oder auch disney+ wollt,<br>
-     diese findent ihr auf meiner Seite!
-    
+        body {
+            font-family: 'Bebas Neue', sans-serif;
+            background-color: red;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
         
-      </p>
-    
-  
+        .header-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            object-position: 50% 15%;
+            display: block;
+        }
+        
+        .überschrift {
+            color: #831D17;
+            flex: 1;
+        }
+        
+        .bild {
+            background-color: white;
+            padding: 16px;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        a {
+            color: #831D17;
+            text-decoration: none;
+            margin-left: 16px;
+            font-weight: 700;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        
+        .text {
+            background-color: #DEDEDE;
+            padding: 8px;
+            color: #484846;
+            font-weight: 600;
+        }
+        
+       
+        }
+        
+        }
+    </style>
 
-    </body>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="überschrift">
+             Filme& Serien Empfehlungen 
+        </h1>
+
+        <div>
+            <a href="#">Netflix</a>
+            <a href="#">PrimeVideo</a>
+            <a href="#">Disney+</a>
+        </div>
+    </div>
+
+
+   <div class="bild">
+        <img class="bild1" src="https://i.wfcdn.de/teaser/1920/48903.jpg">
+
+        <div class="text">
+            Individuelle Bewerbungsbilder in 30 Minuten
+        </div>
+
+
+        
+</body>
+
 </html>
+
 
