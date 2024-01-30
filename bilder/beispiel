@@ -23,9 +23,9 @@
 <body>
 
 <div class="image-container">
-    <img src="barbie.jpg" alt="Bild 1">
-    <img src="barbie.jpg" alt="Bild 2">
-    <img src="barbie.jpg" alt="Bild 3">
+    <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 1">
+    <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 2">
+    <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 3">
     <!-- Fügen Sie weitere Bilder hinzu, wenn nötig -->
 </div>
 
