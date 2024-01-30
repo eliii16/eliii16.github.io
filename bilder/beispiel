@@ -9,25 +9,29 @@
         .image-container {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
         }
 
-        /* Optional: Stil für die Bilder anpassen */
         .image-container img {
             max-width: 100%;
             height: auto;
             margin-bottom: 10px;
+        }
+
+        .text-next-to-image {
+            margin-left: 10px; /* Abstand zwischen Text und Bild */
         }
     </style>
 </head>
 <body>
 
 <div class="image-container">
-    <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 1">
+    <div>
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 1">
+    </div>
+    <div class="text-next-to-image">
+        <p>Text neben Bild 1. Fügen Sie hier Ihren gewünschten Text ein.</p>
+    </div>
     <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 2">
     <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 3">
-    <!-- Fügen Sie weitere Bilder hinzu, wenn nötig -->
-</div>
-
-</body>
-</html>
+    <!-- Fügen Sie weitere Bilder hinzu,
