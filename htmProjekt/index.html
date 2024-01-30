@@ -51,9 +51,50 @@
             margin-bottom: 10px;
         }
 
-        .text-next-to-image {
-            margin-left: 10px; /* Abstand zwischen Text und Bild */
+        .bilder {
+        display:flex;
         }
+        
+        .bilder:hover .schrift {
+         width: 600px;
+
+        }
+
+
+
+      .schrifft{
+
+      }
+
+      .schrift {
+      width: 0px;
+     height: 400px;
+background: rgba (100,60, 180,9.7) ;
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center; align-items: center; overflow: hidden;
+transition: 0.7s ease;
+}
+
+
+
+.schrift h3 {
+     color:white; 
+     font-size: 50px;
+border: 6px solid white; 
+padding: 10px 30px;
+}
+
+
+
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -72,16 +113,17 @@
     <div>
         <img src="https://i.wfcdn.de/teaser/1920/48903.jpg" alt="Bild 1">
     </div>
-    <div class="text-next-to-image">
-        <p>Auf meiner Seite findet ihr empfehlungen zu Filme& Serien wenn ihr nicht weiter wisst.<br>
-            Von Komödien bis hin zu horrorfilme und Serien.<br>
-            Ob ihr Filme&Serien von Netlix, PrimeVideo oder auch disney+ wollt,<br>
-            diese findent ihr auf meiner Seite!</p>
+    
+    <div class="bilder">
+        <img src="https://www.film-rezensionen.de/wp-content/uploads/2022/06/Hustle.jpg" alt="Bild 2" style="max-width: 20%;">
+        <img src="https://cdn-a.prisma.de/cdn/img/default/1501/15007494_485493190082334fd0103ff0ddab0efc_480re0.jpg" alt="Bild 3" style="max-width: 20%;">
+        <img src="https://de.web.img2.acsta.net/pictures/23/09/20/17/20/2248127.jpg" alt="Bild 4" style="max-width: 20%;">
+        <img src="https://de.web.img3.acsta.net/pictures/23/05/11/07/07/5450346.jpg" alt="Bild 5" style="max-width: 20%;">
+        <img src="https://m.media-amazon.com/images/I/71M5OqglJDL._AC_UF894,1000_QL80_.jpg" alt="Bild 6" style="max-width: 20%;">
+        <div class="schrift">
+         <h3>Hier geht es um basketball</h3>   
 
-    </div>
-    <div style="display: flex;">
-        <img src="https://www.film-rezensionen.de/wp-content/uploads/2022/06/Hustle.jpg" alt="Bild 2" style="max-width: 50%;">
-        <img src="https://cdn-a.prisma.de/cdn/img/default/1501/15007494_485493190082334fd0103ff0ddab0efc_480re0.jpg" alt="Bild 3" style="max-width: 50%;">
+        </div>   
     </div>
  
 </div>
