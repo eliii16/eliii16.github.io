@@ -7,126 +7,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
+    
     <style>
+        /* Fügen Sie hier Ihren CSS-Code ein, um das Layout zu gestalten */
         body {
             font-family: 'Bebas Neue', sans-serif;
-            padding-left: 100px;
-            padding-right: 100px;
+            margin: 0;
+            padding: 0;
         }
-      
-    
-        .überschrift {
-            color: red;
-            flex: 1;
-            font-size:50px;
-            display:center;
+
+        .header {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 25px;
         }
-        
-        .bild {
-            padding: 16px;
-            display: flex;           
-        }
-        
-        .bild1 {
-            width: 60%; 
-            height: auto;
-            margin-right: 20px; 
-           
-        }
-      
+
         .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center; 
-            background-color: black;  
-            margin:0px;
-            padding:3px;
-            border:0px;
+            background-color:red;
+            padding: 10px;
+            text-align: center;
         }
-        
-        a {
-            color: red;
+
+        .navbar a {
+            color: white;
             text-decoration: none;
-            margin-left: 30px;
-            font-weight: 700;
-            font-size:30px;
+            margin: 0 15px;
+            font-size: 25px;
         }
-        
-        a:hover {
-            text-decoration: underline;
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px; /* Abstand zwischen Navigation und Bildern */
+            padding: 20px;
         }
-        
-         
-        .text {
-            padding: 8px;
-            font-weight: 600;
-            width: 60%;
-            flex:1;
-            font-size: 40px;
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
         }
-        
-        .flex-container {
-        display:flex;
-        justify-content: space-between;
-        flex-direction: row;
-        background-color:black;
+
+        .text-next-to-image {
+            margin-left: 10px; /* Abstand zwischen Text und Bild */
         }
-       
-       
-      
-        
-    
-    
-    
     </style>
-
-
 </head>
-
 <body>
-   
-    <div class="navbar">
 
-        <div class="flex-container">
-        <h1 class="überschrift">
-             Filme& Serien Empfehlungen 
-        </h1>
-        </div>
+<div class="header">
+    <h1>Filme und Serien empfehlungen</h1>
+</div>
 
-        <div class="flex-container">
-            <a href="Netflix.html">Netflix</a>    
-            <a href="PrimeVideo.html">PrimeVideo</a>
-            <a href="Disney+.html">Disney+</a>
-        </div>
+<div class="navbar">
+    <a href="Netflix.html">Netflix</a>    
+    <a href="PrimeVideo.html">PrimeVideo</a>
+    <a href="Disney+.html">Disney+</a>
+</div>
+
+<div class="image-container">
+    <div>
+        <img src="https://i.wfcdn.de/teaser/1920/48903.jpg" alt="Bild 1">
+    </div>
+    <div class="text-next-to-image">
+        <p>Auf meiner Seite findet ihr empfehlungen zu Filme& Serien wenn ihr nicht weiter wisst.<br>
+            Von Komödien bis hin zu horrorfilme und Serien.<br>
+            Ob ihr Filme&Serien von Netlix, PrimeVideo oder auch disney+ wollt,<br>
+            diese findent ihr auf meiner Seite!</p>
 
     </div>
+    <div style="display: flex;">
+        <img src="https://www.film-rezensionen.de/wp-content/uploads/2022/06/Hustle.jpg" alt="Bild 2" style="max-width: 50%;">
+        <img src="https://cdn-a.prisma.de/cdn/img/default/1501/15007494_485493190082334fd0103ff0ddab0efc_480re0.jpg" alt="Bild 3" style="max-width: 50%;">
+    </div>
+ 
+</div>
 
-
-   <div class="bild">
-        <img class="bild1" src="https://i.wfcdn.de/teaser/1920/48903.jpg">
-
-        <div class="text">
-     Auf meiner Seite findet ihr empfehlungen zu Filme& Serien wenn ihr nicht weiter wisst.<br>
-     Von Komödien bis hin zu horrorfilme und Serien.<br>
-     Ob ihr Filme&Serien von Netlix, PrimeVideo oder auch disney+ wollt,<br>
-     diese findent ihr auf meiner Seite!
-    
-
-
-
-        
-
-
-        </div>
-        </div>
-        </div>
-
-
-        
 </body>
-
 </html>
 
 
