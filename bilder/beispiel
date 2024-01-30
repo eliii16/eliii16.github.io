@@ -6,10 +6,38 @@
     <title>Bilder untereinander positionieren</title>
     <style>
         /* Fügen Sie hier Ihren CSS-Code ein, um das Layout zu gestalten */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
         .image-container {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            margin-top: 20px; /* Abstand zwischen Navigation und Bildern */
+            padding: 20px;
         }
 
         .image-container img {
@@ -25,13 +53,33 @@
 </head>
 <body>
 
+<div class="header">
+    <h1>Meine Bildergalerie</h1>
+</div>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#page1">Page 1</a>
+    <a href="#page2">Page 2</a>
+</div>
+
 <div class="image-container">
     <div>
         <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 1">
     </div>
     <div class="text-next-to-image">
-        <p>Text neben Bild 1. Fügen Sie hier Ihren gewünschten Text ein.</p>
+        <p>Text oben neben Bild 1. Fügen Sie hier Ihren gewünschten Text ein.</p>
     </div>
-    <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 2">
-    <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 3">
-    <!-- Fügen Sie weitere Bilder hinzu,
+    <div style="display: flex;">
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 2" style="max-width: 50%;">
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 3" style="max-width: 50%;">
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 4" style="max-width: 50%;">
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 5" style="max-width: 50%;">
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 6" style="max-width: 50%;">
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 7" style="max-width: 50%;">
+    </div>
+    <!-- Fügen Sie weitere Bilder hinzu, wenn nötig -->
+</div>
+
+</body>
+</html>
