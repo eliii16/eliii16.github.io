@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder untereinander positionieren</title>
+    <style>
+        /* Fügen Sie hier Ihren CSS-Code ein, um das Layout zu gestalten */
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Optional: Stil für die Bilder anpassen */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="barbie.jpg" alt="Bild 1">
+    <img src="barbie.jpg" alt="Bild 2">
+    <img src="barbie.jpg" alt="Bild 3">
+    <!-- Fügen Sie weitere Bilder hinzu, wenn nötig -->
+</div>
+
+</body>
+</html>
