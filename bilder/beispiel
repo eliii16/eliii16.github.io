@@ -83,32 +83,7 @@
             margin-right: 20px; /* Abstand zwischen den Bildern */
         }
    
-        .Bild2 {
-        max-width: 20%;
-    }
-   
-    .Bild3 {
-        max-width: 20%;
-    }
-   
-    .Bild4 {
-        max-width: 20%;
-    }
-   
-   
-    .Bild5 {
-        max-width: 20%;
-    }
-   
-   
-    .Bild6 {
-        max-width: 20%;
-    }
-
-    .Bild7 {
-        max-width: 20%;
-    } 
-
+      
     
 
 
