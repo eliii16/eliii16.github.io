@@ -9,52 +9,112 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     
     <style>
-        /* Fügen Sie hier Ihren CSS-Code ein, um das Layout zu gestalten */
-        body {
-            font-family: 'Bebas Neue', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+        font-family: 'Bebas Neue', sans-serif; /* Benutze die Schriftart Bebas Neue */
+        margin: 0; /* Kein Außenabstand */
+        padding: 0; /* Kein Innenabstand */
+    }
 
-        .header {
-            background-color: red;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            font-size: 25px;
-        }
+    /* Header-Styling */
+    .header {
+        background-color: red; /* Roter Hintergrund */
+        color: white; /* Weißer Text */
+        text-align: center; /* Zentrierter Text */
+        padding: 10px; /* 10 Pixel Innenabstand */
+        font-size: 25px; /* Schriftgröße 25 Pixel */
+    }
 
-        .navbar {
-            background-color:red;
-            padding: 10px;
-            text-align: center;
-        }
+    /* Navigationsleisten-Styling */
+    .navbar {
+        background-color:red; /* Roter Hintergrund */
+        padding: 10px; /* 10 Pixel Innenabstand */
+        text-align: center; /* Zentrierter Text */
+    }
 
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 25px;
-        }
+    /* Link-Styling für die Navigationsleiste */
+    .navbar a {
+        color: white; /* Weißer Text */
+        text-decoration: none; /* Keine Unterstreichung */
+        margin: 0 15px; /* 0 oben/unten, 15 Pixel links/rechts Abstand */
+        font-size: 25px; /* Schriftgröße 25 Pixel */
+    }
 
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-top: 20px; /* Abstand zwischen Navigation und Bildern */
-            padding: 20px;
-        }
+    /* Styling für den Bildcontainer */
+    .image-container {
+        display: flex; /* Flexbox-Layout */
+        flex-direction: column; /* Vertikale Ausrichtung der Kinder */
+        align-items: flex-start; /* Kinder links ausrichten */
+        margin-top: 20px; /* 20 Pixel Abstand oben */
+        padding: 20px; /* 20 Pixel Innenabstand */
+    }
 
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
+    /* Styling für Bilder innerhalb des Bildcontainers */
+    .image-container img {
+        max-width: 100%; /* Maximale Breite 100% */
+        height: auto; /* Automatische Anpassung der Höhe */
+        margin-bottom: 10px; /* 10 Pixel Abstand unten */
+    }
 
-        .bilder {
-        display:flex;
-       
+    /* Styling für den Bilder-Container */
+    .bilder {
+        display: flex; /* Flexbox-Layout */
+        /* Füge hier bei Bedarf weitere Styles hinzu */
+    }
+  
+    .wrapper{
+  position:relative;
+  width: 500px;
+  height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin: 30px;
+}
+.content{
+  width: 100%;
+  height:100%;
+  position:absolute;
+  background-image: url(https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg);
+  background-position:50% 20%;
+  background-size:145%;
+  transition: height,width,linear-gradient 1s,1s,1s;
+  
+  display:flex;
+  align-items:end;
+  color: #00000000;
+}
+.content:hover{
+  color: #ffffff;
+  
+    width: 110%;
+    height:105%;
+    background-image: linear-gradient(#00000000 20%,#000 100%), url(https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg);
+}
+.text-box{
+  height:50%;
+  width:100%;
+  
+}
+.text-wrapper{
+  padding:10px;
+  
+}
+.text-wrapper > .title{
+  font-size: 2vw;
+}
+.text-wrapper > .description{
+  margin-top: 5px;
+  font-size: 1.5vw;
+}
 
+#intime{
+    background-image: url(https://m.media-amazon.com/images/I/71M5OqglJDL._AC_UF894,1000_QL80_.jpg);
+}
+#intime:hover{
+    
+    background-image:
+    linear-gradient(#00000000 20%,#000 100%), url(https://m.media-amazon.com/images/I/71M5OqglJDL._AC_UF894,1000_QL80_.jpg);
+}
 
 
 
@@ -95,8 +155,28 @@
     </div>
  
 </div>
+<div class="wrapper">
+    <div class="content" id="intime">
+      <div class="text-box">
+         <div class="text-wrapper">
+           <div class="title">Ein Leben auf dem Pony Hof</div>
+           <div class="description">Hier geht es um ein Mädchen die eine ein Pferd entdeckt und mit ihm inzucht brut hat.</div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="content">
+      <div class="text-box">
+         <div class="text-wrapper">
+           <div class="title">Ein Leben auf dem Pony Hof</div>
+           <div class="description">Hier geht es um ein Mädchen die eine ein Pferd entdeckt und mit ihm inzucht brut hat.</div>
+         </div>
+      </div>
+    </div>
+  </div>
+
 
 </body>
 </html>
-
 
