@@ -32,60 +32,10 @@
             font-size: 18px;
         }
 
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-top: 20px; /* Abstand zwischen Navigation und Bildern */
-            padding: 20px;
-        }
-
-        .image-container div {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            transition: transform 0.3s; /* Fügt einen Übergangseffekt hinzu */
-        }
-
-        .image-container .hover-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 20px;
-            opacity: 0;
-            transition: opacity 0.3s;
-            text-align: center;
-        }
-
-        .image-container div:hover img {
-            transform: scale(1.1); /* Vergrößert das Bild beim Überfahren */
-        }
-
-        .image-container div:hover .hover-text {
-            opacity: 1; /* Zeigt den Text beim Überfahren an */
-        }
-
-        .image-container div:nth-child(n+2) img {
-            max-width: 100%; /* Macht alle unteren Bilder breiter */
-            height: auto;
-        }
-
-        .image-container div:nth-child(n+2) {
-            max-width: 50%; /* Setzt die Breite des Containers für Bild 2 bis 7 auf 50% */
-            display: inline-block;
-            margin-right: 20px; /* Abstand zwischen den Bildern */
-        }
-   
       
-    
+        
 
+       
 
 
 
@@ -106,40 +56,27 @@
     <a href="#page2">Page 2</a>
 </div>
 
-<div class="image-container">
-    <div>
-        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 1">
-        <div class="hover-text">Text für Bild 1</div>
-    </div>
-    <div style="display: flex;">
-        <div>
-            <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 2">
-            <div class="hover-text">Text für Bild 2</div>
+       <div>
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg">
         </div>
-        <div>
-            <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 3">
-            <div class="hover-text">Text für Bild 3</div>
-        </div>
-        <div>
-            <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 4">
-            <div class="hover-text">Text für Bild 4</div>
-        </div>
-        <div>
-            <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 5">
-            <div class="hover-text">Text für Bild 5</div>
-        </div>
-        <div>
-            <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 6">
-            <div class="hover-text">Text für Bild 6</div>
-        </div>
-        <div>
-            <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt="Bild 7">
-            <div class="hover-text">Text für Bild 7</div>
-        </div>
-    </div>
-    <!-- Fügen Sie weitere Bilder hinzu, wenn nötig -->
-</div>
 
+        <div class="container">
+            <div class="box">
+            <img src ="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg">
+            </div>
+            <div class="box">
+                <img src ="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg">
+                </div>
+                <div class="box">
+                    <img src ="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg">
+                    </div>
+                    <div class="box">
+                        <img src ="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg">
+                        </div>
+                        <div class="box">
+                            <img src ="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg">
+                            </div>
+        </div>
 </body>
 </html>
 
