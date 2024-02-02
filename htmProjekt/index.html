@@ -61,60 +61,13 @@
         /* Füge hier bei Bedarf weitere Styles hinzu */
     }
   
-    .wrapper{
-  position:relative;
-  width: 500px;
-  height:300px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin: 30px;
-}
-.content{
-  width: 100%;
-  height:100%;
-  position:absolute;
-  background-image: url(https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg);
-  background-position:50% 20%;
-  background-size:145%;
-  transition: height,width,linear-gradient 1s,1s,1s;
-  
-  display:flex;
-  align-items:end;
-  color: #00000000;
-}
-.content:hover{
-  color: #ffffff;
-  
-    width: 110%;
-    height:105%;
-    background-image: linear-gradient(#00000000 20%,#000 100%), url(https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg);
-}
-.text-box{
-  height:50%;
-  width:100%;
-  
-}
-.text-wrapper{
-  padding:10px;
-  
-}
-.text-wrapper > .title{
-  font-size: 2vw;
-}
-.text-wrapper > .description{
-  margin-top: 5px;
-  font-size: 1.5vw;
+ 
+/* Hover-Effekt für Bilder 2 bis 7 */
+.bilder img:hover {
+    opacity: 0.7; /* Ändere die Deckkraft auf 70% beim Hover */
+    cursor: pointer; /* Ändere den Mauszeiger auf Zeiger beim Hover */
 }
 
-#intime{
-    background-image: url(https://m.media-amazon.com/images/I/71M5OqglJDL._AC_UF894,1000_QL80_.jpg);
-}
-#intime:hover{
-    
-    background-image:
-    linear-gradient(#00000000 20%,#000 100%), url(https://m.media-amazon.com/images/I/71M5OqglJDL._AC_UF894,1000_QL80_.jpg);
-}
 
 
 
@@ -154,27 +107,7 @@
         </div>   
     </div>
  
-</div>
-<div class="wrapper">
-    <div class="content" id="intime">
-      <div class="text-box">
-         <div class="text-wrapper">
-           <div class="title">Ein Leben auf dem Pony Hof</div>
-           <div class="description">Hier geht es um ein Mädchen die eine ein Pferd entdeckt und mit ihm inzucht brut hat.</div>
-         </div>
-      </div>
-    </div>
-  </div>
-  <div class="wrapper">
-    <div class="content">
-      <div class="text-box">
-         <div class="text-wrapper">
-           <div class="title">Ein Leben auf dem Pony Hof</div>
-           <div class="description">Hier geht es um ein Mädchen die eine ein Pferd entdeckt und mit ihm inzucht brut hat.</div>
-         </div>
-      </div>
-    </div>
-  </div>
+
 
 
 </body>
