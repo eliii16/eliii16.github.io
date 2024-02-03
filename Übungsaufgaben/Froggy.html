@@ -5,44 +5,26 @@
 	<title> My own Froggy Level </title>	
 	<style>
 	
-		.pond{
-			display: flex;	
-			/* You can use: justify-content || align-items || flex-direction || flex-warp || align-content
-			For more Information visit: https://www.w3schools.com/css/css3_flexbox_container.asp */
-		}
 		
-		.green-lilypad{
-			align-self:center;
-			/* You can use order || align-self
-			For more Information visit: https://www.w3schools.com/css/css3_flexbox_items.asp */
-		}
 		
-		.red-lilypad{
-			align-self:center;
-			/* You can use order || align-self
-			For more Information visit: https://www.w3schools.com/css/css3_flexbox_items.asp */
-		}
-		
-		.yellow-lilypad{
-			align-self:center;
-			/* You can use order || align-self
-			For more Information visit: https://www.w3schools.com/css/css3_flexbox_items.asp */
-		}
-
-                 .frogs{
-                align-items: flex-end;
-}
-              .green-lilypad{
-               display: inline;
-			  }
-		
-	          .yellow-lilypad{
-
-			  }
+		.frogs {
+        justify-content: flex-end; 
+    }
 	
-	          .red-lilypad{
+    .pond {
+        display: flex;
+        justify-content: center;
+    }
 
-			  }	
+    .frogs {
+        justify-content: flex-end;
+        display: flex;
+        
+        align-items: center; /* Center frogs horizontally */
+    }
+
+          
+		
 	
 	</style>	
 	</head>
