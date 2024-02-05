@@ -1,50 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Filme und Serien Empfehlungen</title>   
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  </head>
-  <body>
-   <style>
-
-     body {
-font-family: 'Bebas Neue', sans-serif;
-}
-
-
-.Überschrift1 {
-  color: red;
-}
-.LogoBild {
-width: 50%;
-height:50%;
-float:left;
- 
-      }
-
-
-
-
-
-
-
-     
-   </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filme & Serien Empfehlungen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     
-     
-     <h1  class="Überschrift1">
-     Netflix Filme&Serien Empfehlugen
-     </h1>
-  
+    <style>
+        body {
+            font-family: 'Bebas Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-     <img class="LogoBild" src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940"> 
- 
-  
-  
-  
-  
-  
-  </body>
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .LogoBild { 
+            width: 55%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .Überschrift1 {
+            color: red;
+            margin: 20px 0;
+            font-size: 50px;
+        }
+
+        .BildText{
+            font-size: 40px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .action-images img {
+    width: 22%;
+    height: auto;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.action-images img:hover {
+    transform: scale(1.1); /* Vergrößert das Bild beim Überfahren */
+}
+
+.action-images img::after {
+    content: "Mehr erfahren";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.action-images img:hover::after {
+    opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1 class="Überschrift1">
+        Netflix Filme & Serien Empfehlungen
+    </h1>
+</div>
+
+<div class="content">
+    <img class="LogoBild" src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940"> 
+    <p class="BildText">Ihre Quelle für die besten Filme und Serien auf Netflix.</p>
+
+    <h2 class="Überschrift1">Action-Serie</h2>
+    <div class="action-images">
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt=" Bild 1">
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt=" Bild 2">
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt=" Bild 3">
+        <img src="https://img.welt.de/img/vermischtes/mobile152719727/1472501847-ci102l-w1024/title.jpg" alt=" Bild 4">
+    </div>
+</div>
+
+</body>
 </html>
