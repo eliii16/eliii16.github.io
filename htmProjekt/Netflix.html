@@ -16,8 +16,8 @@
         }
 
         .header {
-            background-color: red;
-            color: black;
+            background-color: black;
+            color: red;
             text-align: center;
             padding: 10px;
             font-size: 20px;
@@ -27,7 +27,7 @@
         .image-container {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             margin-top: 20px; /* Abstand zwischen Navigation und Bildern */
             padding: 20px;
         }
@@ -70,13 +70,13 @@
             justify-content: flex-end; /* Bild nach oben verschieben, um Platz für den Text zu schaffen */
         }
 
-           .image-container div:first-child {
-    max-width: 50%;
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    margin: 0 auto; /* Center the container itself horizontally */
-}
+        .image-container div:first-child {
+            max-width: 50%;
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+            margin: 0 auto; /* Center the container itself horizontally */
+        }
 
         .image-container div:first-child .text-on-right {
             max-width: 50%; /* Ändere die Breite des Textcontainers auf 50% */
@@ -102,6 +102,17 @@
             height: auto;
         }
 
+        .big-title {
+            font-size: 36px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Mittig zentrieren */
+        .überschriftVier {
+            text-align: center;
+        }
+        
     </style>
 </head>
 <body>
@@ -110,16 +121,16 @@
     <h1>Filme und Serien empfehlungen</h1>
 </div>
 
-
-
 <div class="image-container">
     <div>
-        <img src="https://i.wfcdn.de/teaser/1920/48903.jpg" alt="Bild 1">
+        <img src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940" alt="Bild 1">
         <div class="text-on-right">
             
         </div>
         <div class="hover-text">Text für Bild 1</div>
     </div>
+    <!-- Große Überschrift unter Bild 1 -->
+    <div class="big-title">Große Überschrift</div>
     <div>
         <div>
             <img src="https://cdn-a.prisma.de/cdn/img/default/1501/15007494_485493190082334fd0103ff0ddab0efc_480re0.jpg" alt="Bild 2">
@@ -151,9 +162,9 @@
      <div>
             <img src="https://d2iltjk184xms5.cloudfront.net/uploads/photo/file/388998/7cb2586034b81af6af5895d74795eb5c-gossip.jpg" alt="Bild 8">
             <div class="hover-text">Text für Bild 8</div>
-        
         </div>
-
+        <!-- Große Überschrift unter Bild 8 -->
+        <div class="überschriftVier">Überschrift für Bild 8</div>
     
         <div>
             <img src="https://assets.cdn.moviepilot.de/files/ab15f5916f8dd3c96d143fa2b2ebb9174908bb68a00a75154e29fee1c8ba/copyright/SITP_S1_SKey+Art.jpg" alt="Bild 9">
@@ -188,4 +199,3 @@
 
 </body>
 </html>
-
