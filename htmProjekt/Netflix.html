@@ -13,11 +13,12 @@
             font-family: 'Bebas Neue', sans-serif;
             margin: 0;
             padding: 0;
+            background-color:black;
         }
 
         .header {
-            background-color: black;
-            color: red;
+            background-color: rgb(190, 30, 30);
+            color: white;
             text-align: center;
             padding: 10px;
             font-size: 20px;
@@ -65,53 +66,39 @@
             opacity: 1; /* Zeigt den Text beim Überfahren an */
         }
 
-        .image-container div:first-child {
-            max-width: 50%; /* Ändere die Breite des Containers für das erste Bild auf 50% */
-            justify-content: flex-end; /* Bild nach oben verschieben, um Platz für den Text zu schaffen */
+        .big-title {
+            font-size: 45px;
+            margin-top: 20px;
+            text-align: center;
+            background-color: rgb(202, 40, 40);
+            color:white;
         }
 
-        .image-container div:first-child {
-            max-width: 50%;
-            display: flex;
-            justify-content: center; /* Center the content horizontally */
-            align-items: center; /* Center the content vertically */
-            margin: 0 auto; /* Center the container itself horizontally */
+        /* Zusätzlicher Text über der großen Überschrift */
+        .additional-text {
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-align: center;
         }
-
-        .image-container div:first-child .text-on-right {
-            max-width: 50%; /* Ändere die Breite des Textcontainers auf 50% */
-        }
-
-        .image-container div:first-child .text-on-right p {
-            margin: 0; /* Entferne den standardmäßigen Absatzeinzug */
-        }
-
-        .image-container div:nth-child(n+2) {
-            max-width: 100%; /* Ändere die Breite des Containers für Bild 2 bis 7 auf 100% */
-            display: flex;
-            flex-wrap: wrap; /* Damit die Bilder auf die nächste Zeile gehen, wenn der Platz nicht ausreicht */
-        }
-
+        
+        /* Bilder 2 bis 13 kleiner machen und Abstand hinzufügen */
         .image-container div:nth-child(n+2) > div {
-            flex: 1; /* Gleichmäßige Verteilung des verfügbaren Platzes */
-            margin-right: 20px; /* Abstand zwischen den Bildern */
+            flex: 1;
+            margin-right: 10px; /* Abstand zwischen den Bildern */
+            max-width: calc(50% - 10px); /* 50% Breite minus Abstand */
         }
 
         .image-container div:nth-child(n+2) img {
-            max-width: 100%; /* Setze die Maximalbreite der Bilder auf 100% */
+            max-width: 100%;
             height: auto;
         }
+        .image-container div:first-child img {
+    max-width: 55%; /* Ändere die Breite des ersten Bildes auf 50% */
+    display: block; /* Ändere das Anzeigeverhalten auf block, um es horizontal zu zentrieren */
+    margin: 0 auto; /* Zentriere das Bild horizontal */
+}
 
-        .big-title {
-            font-size: 36px;
-            margin-top: 20px;
-            text-align: center;
-        }
 
-        /* Mittig zentrieren */
-        .überschriftVier {
-            text-align: center;
-        }
         
     </style>
 </head>
@@ -123,19 +110,24 @@
 
 <div class="image-container">
     <div>
-        <img src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940" alt="Bild 1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="Bild 1">
         <div class="text-on-right">
-            
+        
         </div>
         <div class="hover-text">Text für Bild 1</div>
     </div>
+    
+    <!-- Zusätzlicher Text über der großen Überschrift -->
+    <div class="additional-text">Zusätzlicher Text über Filme und Serien</div>
+    
     <!-- Große Überschrift unter Bild 1 -->
-    <div class="big-title">Große Überschrift</div>
+    <div class="big-title">Meine Top Netflix Filme</div>
     <div>
         <div>
             <img src="https://cdn-a.prisma.de/cdn/img/default/1501/15007494_485493190082334fd0103ff0ddab0efc_480re0.jpg" alt="Bild 2">
             <div class="hover-text">Text für Bild 2</div>
         </div>
+        
         <div>
             <img src="https://de.web.img2.acsta.net/pictures/23/09/20/17/20/2248127.jpg" alt="Bild 3">
             <div class="hover-text">Text für Bild 3</div>
@@ -163,8 +155,6 @@
             <img src="https://d2iltjk184xms5.cloudfront.net/uploads/photo/file/388998/7cb2586034b81af6af5895d74795eb5c-gossip.jpg" alt="Bild 8">
             <div class="hover-text">Text für Bild 8</div>
         </div>
-        <!-- Große Überschrift unter Bild 8 -->
-        <div class="überschriftVier">Überschrift für Bild 8</div>
     
         <div>
             <img src="https://assets.cdn.moviepilot.de/files/ab15f5916f8dd3c96d143fa2b2ebb9174908bb68a00a75154e29fee1c8ba/copyright/SITP_S1_SKey+Art.jpg" alt="Bild 9">
