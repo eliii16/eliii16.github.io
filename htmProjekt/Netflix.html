@@ -18,18 +18,30 @@
 
         .header {
             background-color: rgb(190, 30, 30);
-            color: white;
+            color: black;
             text-align: center;
             padding: 10px;
-            font-size: 20px;
+            font-size: 25px;
         }
 
+        .navbar {
+            background-color: rgb(190, 30, 30);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 30px;
+        }
        
         .image-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 20px; /* Abstand zwischen Navigation und Bildern */
+          
             padding: 20px;
         }
 
@@ -43,7 +55,8 @@
         .image-container img {
             max-width: 100%;
             height: auto;
-            transition: transform 0.3s; /* Fügt einen Übergangseffekt hinzu */
+            transition: transform 0.3s, box-shadow 0.3s, filter 0.3s; /* Fügt einen Übergangseffekt für den Hover hinzu */
+            border-radius: 8px; /* Fügt abgerundete Ecken hinzu */
         }
 
         .image-container .hover-text {
@@ -54,16 +67,25 @@
             color: white;
             font-size: 20px;
             opacity: 0;
-            transition: opacity 0.3s;
+            transition: opacity 0.3s, transform 0.5s; /* Fügt einen Übergangseffekt für die Opazität und Transform hinzu */
             text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe für den Text */
+            padding: 10px; /* Innenabstand für den Text */
+            border-radius: 5px; /* Abgerundete Ecken für den Text */
+            pointer-events: none; /* Verhindert, dass der Text klickbar ist */
+            z-index: -1; /* Setzt den Text hinter das Bild */
         }
 
         .image-container div:hover img {
             transform: scale(1.1); /* Vergrößert das Bild beim Überfahren */
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); /* Fügt einen Schatteneffekt hinzu */
+            filter: brightness(80%); /* Verringert die Helligkeit des Bildes */
         }
 
         .image-container div:hover .hover-text {
             opacity: 1; /* Zeigt den Text beim Überfahren an */
+            transform: translate(-50%, -50%); /* Positioniert den Text in der Mitte */
+            z-index: 1; /* Setzt den Text über das Bild */
         }
 
         .big-title {
@@ -79,6 +101,7 @@
             font-size: 40px;
             margin-bottom: 20px;
             text-align: center;
+            color:white;
         }
         
         /* Bilder 2 bis 13 kleiner machen und Abstand hinzufügen */
@@ -92,100 +115,117 @@
             max-width: 100%;
             height: auto;
         }
+        .image-container div:nth-child(3) img, /* Bild 2 */
+        .image-container div:nth-child(8) img { /* Bild 8 */
+            max-width: 100%; /* Ändere die Breite der Bilder 2 und 8 auf 100% */
+        }
+
         .image-container div:first-child img {
-    max-width: 55%; /* Ändere die Breite des ersten Bildes auf 50% */
-    display: block; /* Ändere das Anzeigeverhalten auf block, um es horizontal zu zentrieren */
-    margin: 0 auto; /* Zentriere das Bild horizontal */
-}
+            max-width: 55%; /* Ändere die Breite des ersten Bildes auf 55% */
+            display: block; /* Ändere das Anzeigeverhalten auf block, um es horizontal zu zentrieren */
+            margin: 0 auto; /* Zentriere das Bild horizontal */
+        }
 
-
+        .big-titleTwo{
+            font-size: 45px;
+            margin-top: 20px;
+            text-align: center;
+            background-color: rgb(202, 40, 40);
+            color:white;   
+        }
         
     </style>
 </head>
 <body>
-
-<div class="header">
-    <h1>Filme und Serien empfehlungen</h1>
-</div>
-
-<div class="image-container">
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="Bild 1">
-        <div class="text-on-right">
-        
-        </div>
-        <div class="hover-text">Text für Bild 1</div>
-    </div>
-    
-    <!-- Zusätzlicher Text über der großen Überschrift -->
-    <div class="additional-text">Zusätzlicher Text über Filme und Serien</div>
-    
-    <!-- Große Überschrift unter Bild 1 -->
-    <div class="big-title">Meine Top Netflix Filme</div>
-    <div>
-        <div>
-            <img src="https://cdn-a.prisma.de/cdn/img/default/1501/15007494_485493190082334fd0103ff0ddab0efc_480re0.jpg" alt="Bild 2">
-            <div class="hover-text">Text für Bild 2</div>
-        </div>
-        
-        <div>
-            <img src="https://de.web.img2.acsta.net/pictures/23/09/20/17/20/2248127.jpg" alt="Bild 3">
-            <div class="hover-text">Text für Bild 3</div>
-        </div>
-        <div>
-            <img src="https://de.web.img3.acsta.net/pictures/23/05/11/07/07/5450346.jpg" alt="Bild 4">
-            <div class="hover-text">Text für Bild 4</div>
-        </div>
-        <div>
-            <img src="https://play-lh.googleusercontent.com/V4zCQCPn0zGuCVgRBzyHEy53SYK9O6wOCLuVjX4CFtsSaylLUqMOp6mfHs73nOU8Brvg=w240-h480-rw" alt="Bild 5">
-            <div class="hover-text">Text für Bild 5</div>
-        </div>
-        <div>
-            <img src="https://m.media-amazon.com/images/I/71M5OqglJDL._AC_UF894,1000_QL80_.jpg" alt="Bild 6">
-            <div class="hover-text">Text für Bild 6</div>
-        </div>
-        <div>
-            <img src="https://www.film-rezensionen.de/wp-content/uploads/2022/06/Hustle.jpg" alt="Bild 7">
-            <div class="hover-text">Text für Bild 7</div>
-        </div>
+   
+    <div class="header">
+        <h1>Filme und Serien empfehlungen</h1>
     </div>
 
-    <div>
-     <div>
-            <img src="https://d2iltjk184xms5.cloudfront.net/uploads/photo/file/388998/7cb2586034b81af6af5895d74795eb5c-gossip.jpg" alt="Bild 8">
-            <div class="hover-text">Text für Bild 8</div>
+    <!-- Navigation unter der Überschrift -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
         </div>
-    
+
+    <div class="image-container">
         <div>
-            <img src="https://assets.cdn.moviepilot.de/files/ab15f5916f8dd3c96d143fa2b2ebb9174908bb68a00a75154e29fee1c8ba/copyright/SITP_S1_SKey+Art.jpg" alt="Bild 9">
-            <div class="hover-text">Text für Bild 9</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="Bild 1">
+            <div class="text-on-right">
+            
+            </div>
+            <div class="hover-text">Text für Bild 1</div>
         </div>
+        
+        <!-- Zusätzlicher Text über der großen Überschrift -->
+        <div class="additional-text">Zusätzlicher Text über Filme und Serien</div>
+        
+        <!-- Große Überschrift unter Bild 1 -->
+        <div class="big-title" id="top-filme">Meine Top Netflix Filme</div>
+        <div>
+            <div>
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/c19f0f87b3f50ea9ff5f5048c9d7a600b15516ac4b98b7e9a9fafa1faae6a569._SX780_.jpg" alt="Bild 2">
+                <div class="hover-text">Text für Bild 2</div>
+            </div>
+            
+            <div>
+                <img src="https://media.themoviedb.org/t/p/w500/imVPdj8kvLpMOitQgP8N0w0O5C3.jpg" alt="Bild 3">
+                <div class="hover-text">Text für Bild 3</div>
+            </div>
+            <div>
+                <img src="https://musicart.xboxlive.com/7/e8a52000-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" alt="Bild 4">
+                <div class="hover-text">Text für Bild 4</div>
+            </div>
+            <div>
+                <img src="https://play-lh.googleusercontent.com/V4zCQCPn0zGuCVgRBzyHEy53SYK9O6wOCLuVjX4CFtsSaylLUqMOp6mfHs73nOU8Brvg=w240-h480-rw" alt="Bild 5">
+                <div class="hover-text">Text für Bild 5</div>
+            </div>
+            <div>
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/5f1279eb01ebda12a099f85434577765dab9fd428094daa64babcd706f092acf.jpg" alt="Bild 6">
+                <div class="hover-text">Text für Bild 6</div>
+            </div>
+            <div>
+                <img src="https://www.film-rezensionen.de/wp-content/uploads/2022/06/Hustle.jpg" alt="Bild 7">
+                <div class="hover-text">Text für Bild 7</div>
+            </div>
+        </div>
+
+        <div class="big-titleTwo" id="top-serien">Meine Top Netflix Serien</div>
+        <div>
+         <div>
+                <img src="https://m.media-amazon.com/images/M/MV5BYWU4ZmI0NTItZjcyNy00MzQ5LThiNDQtZDZkNjg1NWUwN2RhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="Bild 8">
+                <div class="hover-text">Text für Bild 8</div>
+            </div>
+        
+            <div>
+                <img src="https://m.media-amazon.com/images/I/81Nw1lLPoFL._AC_UF894,1000_QL80_.jpg" alt="Bild 9">
+                <div class="hover-text">Text für Bild 9</div>
+            </div>
+
+            
+            <div>
+                <img src="https://d2iltjk184xms5.cloudfront.net/uploads/photo/file/388998/7cb2586034b81af6af5895d74795eb5c-gossip.jpg" alt="Bild 10">
+                <div class="hover-text">Text für Bild 10</div>
+            </div>
+
+            
+            <div>
+                <img src="https://de.web.img3.acsta.net/pictures/20/10/10/02/41/1339917.jpg" alt="Bild 11">
+                <div class="hover-text">Text für Bild 11</div>
+            </div>
+
+            
+            <div>
+                <img src="https://medienjournal-blog.de/wp-content/uploads/2021/11/you-du-wirst-mich-lieben-staffel-3-cover.jpg" alt="Bild 12">
+                <div class="hover-text">Text für Bild 12</div>
+            </div>
 
         
-        <div>
-            <img src="https://de.web.img3.acsta.net/pictures/16/07/14/16/48/211639.jpg" alt="Bild 10">
-            <div class="hover-text">Text für Bild 10</div>
-        </div>
-
-        
-        <div>
-            <img src="https://de.web.img3.acsta.net/pictures/20/10/10/02/41/1339917.jpg" alt="Bild 11">
-            <div class="hover-text">Text für Bild 11</div>
-        </div>
-
-        
-        <div>
-            <img src="https://medienjournal-blog.de/wp-content/uploads/2021/11/you-du-wirst-mich-lieben-staffel-3-cover.jpg" alt="Bild 12">
-            <div class="hover-text">Text für Bild 12</div>
-        </div>
-
-    
-        <div>
-            <img src="https://de.web.img2.acsta.net/pictures/18/07/04/17/01/4241489.jpg" alt="Bild 13">
-            <div class="hover-text">Text für Bild 13</div>
+            <div>
+                <img src="https://images.justwatch.com/poster/248566820/s718/Brooklyn-Nine-Nine.jpg" alt="Bild 13">
+                <div class="hover-text">Text für Bild 13</div>
+            </div>
         </div>
     </div>
-</div>
 
 </body>
 </html>
