@@ -55,8 +55,8 @@
         .image-container img {
             max-width: 100%;
             height: auto;
-            transition: transform 0.3s, box-shadow 0.3s, filter 0.3s; /* Fügt einen Übergangseffekt für den Hover hinzu */
-            border-radius: 8px; /* Fügt abgerundete Ecken hinzu */
+            transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+            border-radius: 8px;
         }
 
         .image-container .hover-text {
@@ -67,25 +67,25 @@
             color: white;
             font-size: 20px;
             opacity: 0;
-            transition: opacity 0.3s, transform 0.5s; /* Fügt einen Übergangseffekt für die Opazität und Transform hinzu */
+            transition: opacity 0.3s, transform 0.5s;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe für den Text */
-            padding: 10px; /* Innenabstand für den Text */
-            border-radius: 5px; /* Abgerundete Ecken für den Text */
-            pointer-events: none; /* Verhindert, dass der Text klickbar ist */
-            z-index: -1; /* Setzt den Text hinter das Bild */
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            pointer-events: none;
+            z-index: -1;
         }
 
         .image-container div:hover img {
-            transform: scale(1.1); /* Vergrößert das Bild beim Überfahren */
-            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); /* Fügt einen Schatteneffekt hinzu */
-            filter: brightness(80%); /* Verringert die Helligkeit des Bildes */
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+            filter: brightness(80%);
         }
 
         .image-container div:hover .hover-text {
-            opacity: 1; /* Zeigt den Text beim Überfahren an */
-            transform: translate(-50%, -50%); /* Positioniert den Text in der Mitte */
-            z-index: 1; /* Setzt den Text über das Bild */
+            opacity: 1;
+            transform: translate(-50%, -50%);
+            z-index: 1;
         }
 
         .big-title {
@@ -96,7 +96,6 @@
             color:white;
         }
 
-        /* Zusätzlicher Text über der großen Überschrift */
         .additional-text {
             font-size: 40px;
             margin-bottom: 20px;
@@ -104,26 +103,25 @@
             color:white;
         }
         
-        /* Bilder 2 bis 13 kleiner machen und Abstand hinzufügen */
         .image-container div:nth-child(n+2) > div {
             flex: 1;
-            margin-right: 10px; /* Abstand zwischen den Bildern */
-            max-width: calc(50% - 10px); /* 50% Breite minus Abstand */
+            margin-right: 10px;
+            max-width: calc(50% - 10px);
         }
 
         .image-container div:nth-child(n+2) img {
             max-width: 100%;
             height: auto;
         }
-        .image-container div:nth-child(3) img, /* Bild 2 */
-        .image-container div:nth-child(8) img { /* Bild 8 */
-            max-width: 100%; /* Ändere die Breite der Bilder 2 und 8 auf 100% */
+        .image-container div:nth-child(3) img,
+        .image-container div:nth-child(8) img {
+            max-width: 100%;
         }
 
         .image-container div:first-child img {
-            max-width: 55%; /* Ändere die Breite des ersten Bildes auf 55% */
-            display: block; /* Ändere das Anzeigeverhalten auf block, um es horizontal zu zentrieren */
-            margin: 0 auto; /* Zentriere das Bild horizontal */
+            max-width: 55%;
+            display: block;
+            margin: 0 auto;
         }
 
         .big-titleTwo{
@@ -144,23 +142,20 @@
 
     <div class="navbar">
         <a href="index.html">Home</a>
-        <a href="PrimeVideo.html">PrimeVideo</a>
-        <a href="Disney+.html">Disney+</a>
-        </div>
+    </div>
 
     <div class="image-container">
         <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="Bild 1">
+            <a href="https://www.netflix.com/de/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="Bild 1">
+            </a>
             <div class="text-on-right">
-            
             </div>
             <div class="hover-text">Text für Bild 1</div>
         </div>
         
-        <!-- Zusätzlicher Text über der großen Überschrift -->
         <div class="additional-text">Zusätzlicher Text über Filme und Serien</div>
         
-        <!-- Große Überschrift unter Bild 1 -->
         <div class="big-title" id="top-filme">Meine Top Netflix Filme</div>
         <div>
             <div>
@@ -168,31 +163,12 @@
                 <div class="hover-text">Text für Bild 2</div>
             </div>
             
-            <div>
-                <img src="https://media.themoviedb.org/t/p/w500/imVPdj8kvLpMOitQgP8N0w0O5C3.jpg" alt="Bild 3">
-                <div class="hover-text">Text für Bild 3</div>
-            </div>
-            <div>
-                <img src="https://musicart.xboxlive.com/7/e8a52000-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" alt="Bild 4">
-                <div class="hover-text">Text für Bild 4</div>
-            </div>
-            <div>
-                <img src="https://play-lh.googleusercontent.com/V4zCQCPn0zGuCVgRBzyHEy53SYK9O6wOCLuVjX4CFtsSaylLUqMOp6mfHs73nOU8Brvg=w240-h480-rw" alt="Bild 5">
-                <div class="hover-text">Text für Bild 5</div>
-            </div>
-            <div>
-                <img src="https://m.media-amazon.com/images/S/pv-target-images/5f1279eb01ebda12a099f85434577765dab9fd428094daa64babcd706f092acf.jpg" alt="Bild 6">
-                <div class="hover-text">Text für Bild 6</div>
-            </div>
-            <div>
-                <img src="https://www.film-rezensionen.de/wp-content/uploads/2022/06/Hustle.jpg" alt="Bild 7">
-                <div class="hover-text">Text für Bild 7</div>
-            </div>
+            
         </div>
 
         <div class="big-titleTwo" id="top-serien">Meine Top Netflix Serien</div>
         <div>
-         <div>
+            <div>
                 <img src="https://m.media-amazon.com/images/M/MV5BYWU4ZmI0NTItZjcyNy00MzQ5LThiNDQtZDZkNjg1NWUwN2RhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="Bild 8">
                 <div class="hover-text">Text für Bild 8</div>
             </div>
