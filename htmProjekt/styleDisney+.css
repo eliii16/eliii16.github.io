@@ -78,7 +78,7 @@ body {
     z-index: 1; /* Setzt den Text über das Bild */
 }
 
-.big-title {
+.ÜberschriftFilme {
     font-size: 45px;
     margin-top: 20px;
     text-align: center;
@@ -86,15 +86,14 @@ body {
     color:blue;
 }
 
-/* Zusätzlicher Text über der großen Überschrift */
-.additional-text {
+
+.text2 {
     font-size: 40px;
     margin-bottom: 20px;
     text-align: center;
     color:white;
 }
 
-/* Bilder 2 bis 13 kleiner machen und Abstand hinzufügen */
 .image-container div:nth-child(n+2) > div {
     flex: 1;
     margin-right: 10px; /* Abstand zwischen den Bildern */
@@ -116,7 +115,7 @@ body {
     margin: 0 auto; /* Zentriere das Bild horizontal */
 }
 
-.big-titleTwo{
+.ÜberschriftSerie{
     font-size: 45px;
     margin-top: 20px;
     text-align: center;
