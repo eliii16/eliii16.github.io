@@ -45,8 +45,8 @@ body {
 .image-container img {
     max-width: 100%;
     height: auto;
-    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s; /* Fügt einen Übergangseffekt für den Hover hinzu */
-    border-radius: 8px; /* Fügt abgerundete Ecken hinzu */
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s; 
+    border-radius: 8px; 
 }
 
 .image-container .hover-text {
@@ -57,25 +57,25 @@ body {
     color: blue;
     font-size: 18px;
     opacity: 0;
-    transition: opacity 0.3s, transform 0.5s; /* Fügt einen Übergangseffekt für die Opazität und Transform hinzu */
+    transition: opacity 0.3s, transform 0.5s; 
     text-align: center;
-    background-color: white; /* Hintergrundfarbe für den Text */
-    padding: 10px; /* Innenabstand für den Text */
-    border-radius: 5px; /* Abgerundete Ecken für den Text */
-    pointer-events: none; /* Verhindert, dass der Text klickbar ist */
-    z-index: -1; /* Setzt den Text hinter das Bild */
+    background-color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    pointer-events: none; 
+    z-index: -1; 
 }
 
 .image-container div:hover img {
-    transform: scale(1.1); /* Vergrößert das Bild beim Überfahren */
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); /* Fügt einen Schatteneffekt hinzu */
-    filter: brightness(80%); /* Verringert die Helligkeit des Bildes */
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); 
+    filter: brightness(80%); 
 }
 
 .image-container div:hover .hover-text {
-    opacity: 1; /* Zeigt den Text beim Überfahren an */
-    transform: translate(-50%, -50%); /* Positioniert den Text in der Mitte */
-    z-index: 1; /* Setzt den Text über das Bild */
+    opacity: 1; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
 }
 
 .ÜberschriftFilme {
@@ -96,23 +96,23 @@ body {
 
 .image-container div:nth-child(n+2) > div {
     flex: 1;
-    margin-right: 10px; /* Abstand zwischen den Bildern */
-    max-width: calc(50% - 10px); /* 50% Breite minus Abstand */
+    margin-right: 10px; 
+    max-width: calc(50% - 10px); 
 }
 
 .image-container div:nth-child(n+2) img {
     max-width: 100%;
     height: auto;
 }
-.image-container div:nth-child(3) img, /* Bild 2 */
-.image-container div:nth-child(8) img { /* Bild 8 */
-    max-width: 100%; /* Ändere die Breite der Bilder 2 und 8 auf 100% */
+.image-container div:nth-child(3) img, 
+.image-container div:nth-child(8) img { 
+    max-width: 100%; 
 }
 
 .image-container div:first-child img {
-    max-width: 55%; /* Ändere die Breite des ersten Bildes auf 55% */
-    display: block; /* Ändere das Anzeigeverhalten auf block, um es horizontal zu zentrieren */
-    margin: 0 auto; /* Zentriere das Bild horizontal */
+    max-width: 55%; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 .ÜberschriftSerie{
