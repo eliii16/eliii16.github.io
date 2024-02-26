@@ -32,14 +32,14 @@ body {
     margin-top: -10px;
 }
 
-.round-images {
+.runde-bilder {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     flex-wrap: wrap;
 }
 
-.round-images img {
+.runde-bilder img {
     width: 150px; 
     height: 150px; 
     border-radius: 50%;
@@ -47,7 +47,7 @@ body {
     transition: transform 0.5s ease-in-out;
 }
 
-.round-images img:hover {
+.runde-bilder img:hover {
     transform: scale(1.2) rotate(10deg);
 }
 
@@ -73,7 +73,7 @@ body {
         font-size: 30px; 
         text-align: left;
     }
-    .round-images img {
+    .runde-bilder img {
         width: 200px;
         height: 200px;
     }

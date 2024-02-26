@@ -76,7 +76,7 @@ body {
     z-index: 1;
 }
 
-.big-title {
+.ÜberschriftFilme {
     font-size: 45px;
     margin-top: 20px;
     text-align: center;
@@ -84,7 +84,7 @@ body {
     color: red;
 }
 
-.additional-text {
+.text2 {
     font-size: 40px;
     margin-bottom: 20px;
     text-align: center;
@@ -112,7 +112,7 @@ body {
     margin: 0 auto;
 }
 
-.big-titleTwo {
+.ÜberschriftSerie {
     font-size: 45px;
     margin-top: 20px;
     text-align: center;
