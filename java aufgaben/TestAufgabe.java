@@ -14,6 +14,7 @@ public class TestAufgabe {
         scanner.close();
     }
  
+ 
     public static char berechneNote(int punktzahl) {
         if (punktzahl >= 92 && punktzahl <= 100) {
             return '1';
