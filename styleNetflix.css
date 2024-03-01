@@ -106,7 +106,11 @@ body {
     max-width: 100%;
 }
 
-
+.image-container div:first-child img {
+    max-width: 55%;
+    display: block;
+    margin: 0 auto;
+}
 
 .ÜberschriftSerie {
     font-size: 45px;
