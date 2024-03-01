@@ -109,11 +109,6 @@ body {
     max-width: 100%; /* Ändere die Breite der Bilder 2 und 8 auf 100% */
 }
 
-.image-container div:first-child img {
-    max-width: 55%; /* Ändere die Breite des ersten Bildes auf 55% */
-    display: block; /* Ändere das Anzeigeverhalten auf block, um es horizontal zu zentrieren */
-    margin: 0 auto; /* Zentriere das Bild horizontal */
-}
 
 .ÜberschriftSerie{
     font-size: 45px;
