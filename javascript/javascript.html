@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>JavaSkript</title>
+ 
+    <script>
+ 
+        /* // Auskommentieren
+        var vorname = "Dennis";
+        var x = 20;
+        var y = 25;
+        //alert("Hallo " + vorname + " ! ");
+        //vorname = 45;
+        //alert("Hallo " + vorname + " ! ");
+        //alert("Die Berechnung von x + y = " + (x + y) + ".");
+        //alert("Die Berechnung von " + x + " + " + y  + " = "  +  (x + y) + ".");
+ 
+        ok = confirm("Wollen Sie diese Seite verlassen?");
+        //alert(ok);
+       
+        // Wenn man auf "OK" klickt wird man weitergeleitet
+        // 1. Methode
+        if ( ok == true ) {
+            location.href = "http://www.google.de";
+        }
+ 
+        // 2. Methode
+        if ( true == ok ) {
+            location.href = "http://www.google.de";
+        }
+ 
+        // 3. Methode
+        if ( ok ) {
+            location.href = "http://www.google.de";
+        }
+ 
+        // Wenn man auf "Abbrechen" klickt wird man weitergeleitet
+        // 1. Methode
+        if ( ok == false ) {
+            location.href = "http://www.google.de";
+        }
+ 
+        // 2. Methode
+        if ( false == ok ) {
+            location.href = "http://www.google.de";
+        }
+ 
+        // 3. Methode
+        if ( !ok ) {
+            location.href = "http://www.google.de";
+        }
+        */ // Auskommentieren
+ 
+       
+        // Zufallskommazahl zwischen 0 und 1
+        //x = Math.random();
+        //alert(x);
+ 
+        // Zufallskommazahl zwischen 0 und 99
+        //x = Math.random() * 100;
+        //alert(x);
+ 
+        // Ganze Zahlen zwischen 0 und 99
+        // Math.floor schneidet die Zahl ab der zweiten stelle ab!
+        //x = Math.floor(Math.random() * 100);
+        //alert(x);
+ 
+        // Ganze Zahlen zwischen 1 und 100
+        //x = Math.floor(Math.random() * 100) + 1;
+        //alert(x);
+        //e = prompt("Gebe Sie eine Zahl zwischen 1 und 100 ein:");
+        //alert(e);
+        //if ( e < x )
+        //    alert("Die Eingabe ist zu klein.");
+        //else if (e > x )
+        //    alert("Die Eingabe ist zu groß.");
+        //else
+        //    alert("Gewonnen!");
+ 
+ 
+ 
+ 
+ 
+       
+        // Rate Spiel zwischen 1 und 100
+        let x = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
+ 
+        while (attempts < 7) {
+            e = prompt("Geben Sie eine Zahl zwischen 1 und 100 ein:");
+            attempts++;
+ 
+        if (e < x)
+            alert("Die Eingabe ist zu klein.");
+        else if (e > x)
+            alert("Die Eingabe ist zu groß.");
+        else
+            alert("Gewonnen!");
+        break;
+        }
+ 
+        if (attempts === 7 && e !== x) {
+            alert("Verloren! Die gesuchte Zahl war: " + x);
+        }
+       
+       
+       
+       
+       
+ 
+ 
+ 
+ 
+    </script>
+ 
+ 
+ 
+ 
+</head>
+<body>
+ 
+    <h1>Herzliche Willkommen</h1>
+    <hr />
+   
+</body>
+</html>
