@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+
+let Mitarbeiter = new Array();
+
+    Mitarbeiter[0] = new Object();
+    Mitarbeiter[0]["Name"] = "Müller";
+    Mitarbeiter[0]["Vorname"] = "Max";
+    Mitarbeiter[0]["Alter"] = 24;	
+    Mitarbeiter[0]["Wohnort"] = "München";
+	
+    Mitarbeiter[1] = new Object();
+    Mitarbeiter[1]["Name"] = "Doll";
+    Mitarbeiter[1]["Vorname"] = "Dieter";
+    Mitarbeiter[1]["Alter"] = 25;	
+    Mitarbeiter[1]["Wohnort"] = "Dresden";
+
+    Mitarbeiter[2] = new Object();
+    Mitarbeiter[2]["Name"] = "Schulze";
+    Mitarbeiter[2]["Vorname"] = "Bettina";
+    Mitarbeiter[2]["Alter"] = 26;	
+    Mitarbeiter[2]["Wohnort"] = "Berlin";
+
+function init() {
+  let elem = document.getElementById('button');
+  elem.addEventListener('click', ausgeben);	
+}
+
+	function ausgeben() {
+		let container = document.getElementById("ausgabe"),
+			dl;
+
+		if (container) {
+
+			dl = container.appendChild(
+				document.createElement("dl")
+			);
+
+			Mitarbeiter.forEach(function (m, i) {
+
+				let dd, dt, eigenschaft;
+
+				dt = document.createElement("dt");
+				dt.innerHTML = "Mitarbeiter " + (i+1);
+
+				dl.appendChild(dt);
+
+				for (eigenschaft in m) {
+
+					dd = document.createElement("dd");
+					dd.innerHTML = eigenschaft + ": " + m[eigenschaft];
+
+					dl.appendChild(dd);
+				}
+			});
+		}
+	}
+
+</script>
+
+
+</body>
+</html>
