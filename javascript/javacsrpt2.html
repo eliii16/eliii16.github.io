@@ -9,16 +9,40 @@
 <h1>arrays in Javascript</h1>
 <script>
     vorname = new Array ('eli','donya','elif');
-// Zugriff auf das 1. Element
 
-// 1.Möglichkeit
-// alert ("Das 1. Element hat den wert'" + vorname[0] + "'.");
+    /*
+    Zugriff auf das 1. Element
 
-// 2. Möglichkeit
-// alert ("Das 1. Element hat den wert \"" + vorname[0] + "\".");
+ 1.Möglichkeit
+ alert ("Das 1. Element hat den wert'" + vorname[0] + "'.");
 
-// 3. Möglichkeit
- alert ("Das 1. Element hat den wert '" + vorname[0] + '".');
+ 2. Möglichkeit
+ alert ("Das 1. Element hat den wert \"" + vorname[0] + "\".");
+
+ 3. Möglichkeit
+ alert ("Das 1. Element hat den wert '" + vorname[0] + "'.");
+alert ("Das 2. Element hat den wert '" + vorname[0] + "'.");
+alert ("Das 3. Element hat den wert '" + vorname[0] + "'.");
+
+
+for (var i = 0; i < 3; i++) {
+alert ("Das " + (i+1) +" . Element hat den wert '" + vorname[i] + "'.");
+}
+
+ for (var i = 0; < vorname.legnht; i++){
+ alert ("Das " + (i+1) +" . Element hat den wert '" + vorname[i] + "'.");
+ }
+ */
+
+m = new array();
+m['Mnr'] = 1024;
+m['Vorname'] = 'Alenfelder';
+m['Nachname'] = 'Heinz';
+m['Anrede'] = 'Herr';
+
+for (e in m) {
+    alert( e+ " = " + m[e]);
+}
 
 </script>
 
