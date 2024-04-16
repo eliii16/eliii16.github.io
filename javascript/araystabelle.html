@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
+    <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>JavaSkript</title>
+
     <script>
 
-var Mitarbeiter = [
-  {
-    Name: "Müller",
-    Vorname: "Max",
-    Alter: 24, // Integer! Kein String!
-    Wohnort: "München"
-  },
-  {
-    Name: "Doll",
-    Vorname: "Dieter",
-    Alter: 25, 
-    Wohnort: "Dresden"
-  },
-  {
-    Name: "Schulze",
-    Vorname: "Bettina",
-    Alter: 26,
-    Wohnort: "Berlin"
-  }
-];
+     
+       
+       
+ let farben = ['rot', 'orange', 'gelb', 'grün', 'blau']; 
+
+function init() {
+  let elem = document.getElementById('button');
+  elem.addEventListener('click', ausgeben);	
+}
+
+function ausgeben() {
+  let x = farben[1];
+  let ausgabe = document.getElementById('ausgabe');
+  ausgabe.innerHTML = x;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
 
 </script>
-
-
 </body>
 </html>
