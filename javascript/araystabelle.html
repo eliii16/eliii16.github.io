@@ -31,9 +31,15 @@ m[2] ['Vorname'] = 'Elif';
 m[2] ['Anrede'] = 'Frau';
 
 for (var i = 0; i < m.length; i++){
-document.write("<table border='1>");
-  document.write("<tr><td>" +(i+1)+ ". Mitarbeiter</td><td><br></td></tr>");
-  document.write("</table<br><hr><br>");
+   document.write("<table border='1>");
+   document.write("<tr><td>" +(i+1)+ ". Mitarbeiter</td><td><br></td></tr>");
+ 
+  for (e in m[i]){
+    document.write("<tr><td> " +  e  + "</td><td>" +  m[i][e]   + "</td></tr>");
+  }
+ 
+ 
+ document.write("</table<br><hr><br>");
 }
 
 
