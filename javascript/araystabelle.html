@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
+    
+      <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>JavaSkript</title>
+    </head>
+    <body>
+<h1>Zweidimensionale Arrays Javascript</h1>
+<script>
+//mehrere mitarbeiter
+var m = new Array ();
+m[0] = new Array (); 
+m[0] ['MNr'] = 'M1025';
+m[0] ['Nachname'] = 'Anastasiou';
+m[0] ['Vorname'] = 'Eli';
+m[0] ['Anrede'] = 'Frau';
 
-    <script>
+var m = new Array ();
+m[1] = new Array (); 
+m[1] ['MNr'] = 'M1026';
+m[1] ['Nachname'] = 'Haghnia';
+m[1] ['Vorname'] = 'Donya';
+m[1] ['Anrede'] = 'Frau';
 
-     
-       
-       
- let farben = ['rot', 'orange', 'gelb', 'grün', 'blau']; 
+var m = new Array ();
+m[2] = new Array (); 
+m[2] ['MNr'] = 'M1027';
+m[2] ['Nachname'] = 'Kabadayi';
+m[2] ['Vorname'] = 'Elif';
+m[2] ['Anrede'] = 'Frau';
 
-function init() {
-  let elem = document.getElementById('button');
-  elem.addEventListener('click', ausgeben);	
+for (var i = 0; i < m.length; i++){
+document.write("<table border='1>");
+  document.write("<tr><td>" +(i+1)+ ". Mitarbeiter</td><td><br></td></tr>");
+  document.write("</table<br><hr><br>");
 }
 
-function ausgeben() {
-  let x = farben[1];
-  let ausgabe = document.getElementById('ausgabe');
-  ausgabe.innerHTML = x;
-}
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
+
 
 
 
 </script>
-</body>
-</html>
+    </body>
