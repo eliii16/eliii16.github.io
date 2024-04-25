@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Dreidimensionales Array</title>
+		<meta charset="utf-8">		
+	</head>
+	<body>	
+	<script>			
+			// Dreidimensionales Array
+			/////////////////////////////////////////////////////////////////////
+			m = new Array();
+			m[0] = new Array();
+			m[0]['MNR']      = 1023;
+			m[0]['Anrede']   = 'Herr';
+			m[0]['Nachname'] = 'Nettersheim';
+			m[0]['Vorname']  = 'Michael';
+			m[0]['Email']    = 'Michael.Nettersheim@bib.de';
+			m[0]['Telefon']  = new Array();
+			m[0]['Telefon']['Handy']  = '01575/678543';
+			m[0]['Telefon']['Privat'] = '0221/567432';
+			
+			m[1] = new Array();
+			m[1]['MNR']      = 1024;
+			m[1]['Anrede']   = 'Herr';
+			m[1]['Nachname'] = 'Leder';
+			m[1]['Vorname']  = 'Matthias';
+			m[1]['Email']    = 'Matthias.Leder@bib.de';
+			m[1]['Telefon']  = new Array();
+			m[1]['Telefon']['Handy']  = '01575/3423453';
+			m[1]['Telefon']['Privat'] = '0221/432134';
+			
+			
+			m[2] = new Array();
+			m[2]['MNR']      = 1025;
+			m[2]['Anrede']   = 'Frau';
+			m[2]['Nachname'] = 'Schicha';
+			m[2]['Vorname']  = 'Barbara';
+			m[2]['Email']    = 'Barbara.Schicha@bib.de';
+			m[2]['Telefon']  = new Array();
+			m[2]['Telefon']['Handy']  = '01571/4567432';
+			m[2]['Telefon']['Privat'] = '02202/543212';
+			
+			/////////////////////////////////////////////////////////////////////
+			for ( i = 0; i < m.length; i++ ){			
+				document.write('<table width="300" border="1" cellpadding="10" cellspacing="0">');					
+					for ( e in m[i] ){
+						if(!Array.isArray(m[i][e])){
+							document.write('<tr><td>' + e + '</td><td>' + m[i][e]  + '</td></tr>');
+						}else {
+							document.write('<tr><td>' + e + '</td><td><br></td></tr>');
+							for ( f in m[i][e] ){
+								document.write('<tr><td>' + f + '</td><td>' + m[i][e][f]  + '</td></tr>');
+							}
+						}
+					}
+				document.write('</table><br><hr><br>');
+			}		
+		</script>		
+	</body>
+</html>
