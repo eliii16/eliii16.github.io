@@ -12,11 +12,11 @@
 a = [1,2,[10,20,30,[100,[1000,2000,3000],200,400],50,],3];
 z ="";
 function zeigeInhalt(a){
-    for (let i = 0; i < a-length; i++){
+    for (let i = 0; i < a.length; i++){
         if (Array.isArray(a[i]))
         zeigeInhalt(a[i]);
         else
-        z += a[i] +"<br>";
+        z += a[i] + "<br>";
     }
 }
  
@@ -27,3 +27,4 @@ document.write(z);
 </script>
 </body>
 </html>
+
