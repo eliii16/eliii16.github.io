@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Bilder mit JavaScript</title>
+        <meta charset="utf-8">
+        <script>
+            function tb(wo, was){
+                document.images[wo].src='images/' + was + ' .gif';
+          
+      
+      
+            }
+        </script>
+    </head>
+    <body>
+        <div align="center">
+           
+           
+ 
+            <a href="#"
+            onmouseover="tb('home', 'home2')"
+            onmouseout="tb('home','home1')"
+            
+            ><img name="home" src="images/home1.gif" /></a>     
+            
+          
+           
+            <a href="#"
+            onmouseover="document.images['email'].src='images/email2.gif'"
+            onmouseout="document.images['email'].src='images/email1.gif'"
+            >
+                <img name="email" src="images/email1.gif" />
+            </a>
+ 
+            <a href="#"
+            onmouseover="document.images['links'].src='images/links2.gif'"
+            onmouseout="document.images['links'].src='images/links1.gif'"
+            >
+            <img name="links" src="images/links1.gif" />
+        </a>
+        </div>
+           
+   
+    </body>
+</html>
