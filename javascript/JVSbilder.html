@@ -7,8 +7,9 @@
             function tb(wo, was){
                 document.images[wo].src='images/' + was + ' .gif';
           
-      
-      
+            }
+            function keepLitUp (imgName,imgSrc) {
+                diócument.image[imgName].src = imgSrc;
             }
         </script>
     </head>
@@ -21,22 +22,23 @@
             onmouseover="tb('h', 'home2')"
             onmouseover="tb('h', 'home1')"
             
-            ><img name="home" src="images/home1.gif" /></a>     
+            ><img name="home" src="images/home1.gif" alt="home" /></a>     
             
           
            
-            <a href="#"
-            onmouseover="document.images['email'].src='images/email2.gif'"
-            onmouseout="document.images['email'].src='images/email1.gif'"
-            >
-                <img name="email" src="images/email1.gif" />
+            <a href="#" oneclick = "keepLitUp ('home', '/email2.gif')"
+            //onmouseover="document.images['email'].src='images/email2.gif'"
+            //onmouseout="document.images['email'].src='images/email1.gif'"
+            >  
+            
+            <img name="email" src="images/email1.gif" alt="email" />
             </a>
  
             <a href="#"
             onmouseover="document.images['links'].src='images/links2.gif'"
             onmouseout="document.images['links'].src='images/links1.gif'"
             >
-            <img name="links" src="images/links1.gif" />
+            <img name="links" src="images/links1.gif" alt= "links"  />
         </a>
         </div>
            
