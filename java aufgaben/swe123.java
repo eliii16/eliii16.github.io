@@ -1,21 +1,18 @@
+import java.util.Random;
 
-public class SWE {
-
+public class swe123 {
 
     public static void main(String[] args) {
-   
-        int[][] viergewinnt = {{0,0,0,0,0,0,0,0}, {0,0,0,0,0,1,0,0}, {0,0,0,1,2,1,0,0}, { 0,0,1,1,2,1,1,0}, {0,0,1,1,2,1,1,0}, {0,2,2,1,2,1,2,0}};
+        // Anzahl der Teilnehmer
+        int anzahlTeilnehmer = 16;
+        // Anzahl der Teilnehmer pro Gruppe
+        int groesseGruppe = 3;
 
-        System.out.println ( viergewinnt [0][2] );
+        Random random = new Random();
 
+        // Zufällige Gruppenbildung
+        for (int i = 1; i <= anzahlTeilnehmer; i++) {
+            System.out.println("Person " + i + " ist in Gruppe " + (random.nextInt(anzahlTeilnehmer / groesseGruppe) + 1));
+        }
     }
-
 }
-
-
-
-
-
-
-
-	
