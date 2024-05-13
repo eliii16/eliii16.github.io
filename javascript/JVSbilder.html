@@ -6,16 +6,16 @@
         <meta charset="utf-8">
    
         <script>
-            /*function tB(wo,was){
-                document.images[wo].src='./'+ was + '.gif';
+            function tB(wo,was){
+                document.images[wo].src='images/'+ was + '.gif';
             }
  
             function tc(wo,was){
                 document.images[wo].src='./'+ was + '.gif';
             }
-            */
+            
             function keepLitUp(imgName, imgSrc) {
-                document.images[imgName].src = imgSrc;
+                document.images[imgName].src ='images/' + imgSrc + '.gif';
             }
      
         </script>
@@ -25,24 +25,25 @@
         <div align="center">
            
            
-            <a href="#" onclick="keepLitUp('home', '/home2.gif')"
-            !onmouseover="document.images['home'].src='/home2.gif'"
-            !onmouseout="document.images['home'].src='/home1.gif'"
+            <a href="#" onclick="keepLitUp('home', 'home3')"
+            onmouseover="tB('home', 'home2')"
+            onmouseout="document.images['home'].src='images/home1.gif'"
             >
-            <img name="home" src="/home1.gif" /></a>
+            <img name="home" src="images/home1.gif" /></a>
            
-            <a href="#" onclick="keepLitUp('email', '/email2.gif')"
-            onmouseover="document.images['email'].src='/email2.gif'"
-            onmouseout="document.images['email'].src='/email1.gif'"
+            <a href="#" onclick="keepLitUp('email', 'images/email3.gif')"
+        
+            onmouseover="document.images['email'].src='images/email2.gif'"
+            onmouseout="document.images['email'].src='images/email1.gif'"
             >
-                <img name="email" src="/email1.gif" />
+                <img name="email" src="images/email1.gif" />
             </a>
  
-            <a href="#" onclick="keepLitUp('links', '/links2.gif')"
-            onmouseover="document.images['links'].src='/links2.gif'"
-            onmouseout="document.images['links'].src='/links1.gif'"
+            <a href="#" onclick="keepLitUp('links', 'images/links3.gif')"
+            onmouseover="document.images['links'].src='images/links2.gif'"
+            onmouseout="document.images['links'].src='images/links1.gif'"
             >
-            <img name="links" src="/links1.gif" />
+            <img name="links" src="images/links1.gif" />
         </a>
         </div>
     </body>
