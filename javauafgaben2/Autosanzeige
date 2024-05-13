@@ -1,0 +1,14 @@
+public class Autosanzeigen{
+    public static void main(String [] args)
+    Auto a = new Auto(2024, 30000, 10);
+    Auto a = new Auto(1980, 3000, 145670);
+        a.anzeigen();
+        a.anzeigen();
+        
+}
+ 
+//Methoden
+public void anzeigen(){
+    System.out.println("Das Auto hat folgenede Eigenschaften: ")
+    System.out.println("Das Auto hat folgenede Eigenschaften: ")
+}
