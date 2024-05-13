@@ -1,0 +1,27 @@
+public class Auto {
+ 
+//Eigenschaften
+private int baujahr;
+private int preis;
+private int km
+ 
+//konstruktor
+public Auto (int baujahr, int preis){
+    this.baujahr = baujahr;
+    this.preis = preis;
+    this.km = km;
+ 
+ 
+}
+//Methoden
+public void anzeigen(){
+    
+}
+ 
+ 
+// Andere vereinfachte Schreibweise für den Konstruktor
+/*
+public Auto (int b){
+    baujahr = b;
+}
+*/
