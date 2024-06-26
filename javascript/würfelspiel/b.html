@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title>JavaScript: Zwei Würfelspiel</title>
+  <script>
+    function z1() {
+      return Math.floor(Math.random() * 6) + 1;
+    }
+
+    function z2() {
+      return Math.floor(Math.random() * 6) + 1;
+    }
+
+    function würfeln() {
+      let würfel1 = z1();
+      let würfel2 = z2();
+
+      document.getElementById("bild1").src = "dice_1.png" + würfel1 + ".png";
+      document.getElementById("bild2").src = "dice_1.png" + würfel2 + ".png";
+
+      // Bedingung prüfen und beenden, wenn beide 6 sind
+      if (würfel1 === 6 && würfel2 === 6) {
+        clearInterval(intervall);
+        alert("Sie haben eine 6 gewürfelt");
+      }
+    }
+
+    window.onload = function() {
+      würfeln(); // Starte das Spiel beim Laden der Seite
+      intervall = setInterval(würfeln, 200); // Würfel alle 200 Millisekunden aktualisieren
+    };
+  </script>
+</head>
+<body>
+  <div align="center">
+    <img src="dice_1.png" id="bild1">
+    <img src="dice_1.png" id="bild2">
+    <br>
+    <button onclick="würfeln()">Würfeln</button>
+  </div>
+</body>
+</html>
