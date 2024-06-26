@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JavaScript: Image-Objekt </title>    
+    <script>        
+        
+        var stoppen = null;
+
+        function anzeigen(){
+            y1 = Math.floor(Math.random()* 6) + 1;
+            y2 = Math.floor(Math.random()* 6) + 1;
+            document.images['bild'].src='dice_'+ y1 +'.png';
+            document.images['bild2'].src='dice_'+ y2 +'.png';
+
+            if( y1 == 6 && y2 == 6 ){
+                clearInterval(stoppen);
+                document.getElementById("button").disabelt = false;
+            }
+        }
+
+        function anfangen(){
+            stoppen = setInterval(anzeigen, 200);
+            document.getElementById("button").disabelt = true;
+        }
+
+
+    </script>
+
+
+  </head> 
+<body>
+
+    <form>
+    <div align="center">
+        <img src="dice_1.png" id="bild">
+        <img src="dice_2.png" id="bild2">
+        <img src="dice_2.png" id="bild2">
+        <br>        
+        <input id="button" onclick="anfangen()" type="button" value="Los">     
+    </div>
+    </form>
+</body>
+</html>
