@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>		
+	</head>
+	<body>		
+			<script>
+				// 10 Zufallszahlen zwischen 1 und 30 eindeutig erzeugen
+				f = new Array();
+				// 1. Zufalsszahl erzeugen
+				z = Math.floor(Math.random()*30) + 1;
+				f[0] = z;
+				// 9 weitere Zufallszahlen erzeugen
+				for(i=1; i < 10; i++){
+					z = Math.floor(Math.random()*30) + 1;					
+					// Wenn Zufallszahl vorhanden, dann neu ziehen
+					if(f.includes(z)){
+						i--;
+						if(i==0) i = 1;
+					}else {					
+						f[i]= z;
+					}										
+				}
+				// Aufsteigend sortieren
+				f.sort(function(a, b){return a - b});
+				s = "";
+				s +="<table align='center' border='1' cellpadding='10' cellspacing='0'>";
+					for(i = 0; i < f.length;i++){
+						s += "<tr><td>" + (i+1) + ". Zahl: </td><td>" + f[i] + "</td></tr>";
+					}
+				s += "</table>";
+				document.write(s);	
+		
+			</script>
+	</body>
+</html>
