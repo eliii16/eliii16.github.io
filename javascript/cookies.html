@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Cookies</title>
+        <meta charset="utf-8">
+      <script>
+      function schreibeCookie(){
+      //alert ("Guten Morgen!");
+      document.cookie= "User=Micheal";
+      }
+
+       function leseCookie(){
+      //alert ("Guten Morgen!");
+      alert(document.cookie);
+      }
+
+      function schreibeCookieLangfristig(){
+      // Muss man den Cookie in die Zukunft setzen
+      d = new Date();
+      alert (d,getHours());
+      //document.cookie= "User=Micheal";
+      }
+
+      </script>
+   
+   
+   
+   
+    </head>
+    <body>
+    <a href="javascript: schreibeCookie()">Temporären Cookie schreiben</a>
+    <br>
+    <a href="javascript:leseCookie()">Temporären Cookie lesen</a>
+    <br>
+    <a href="javascript:schreibeCookieLangfristig()"> Cookie langfristig schreiben</a>
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
