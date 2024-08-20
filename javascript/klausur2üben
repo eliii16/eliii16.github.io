@@ -1,3 +1,13 @@
+Diese Seite soll dynamisch aus einem verschachtelten Array aufgebaut werden. Das Array Kunde hat einen nummerischen Index.
+
+KNr., Nachname, Telefon und Beruf sind die Keys vom assoziativem Array. Sie können irgendwelche, aber sinnvolle Werte eintragen.
+
+Es sollen mindestens 2 Kunden angezeigt werden.
+
+Jeder Kunde wird in einer eigenständigen Tabelle ausgegeben.
+
+
+
 <!doctype html>
 <html>
 	<head>
