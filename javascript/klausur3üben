@@ -1,0 +1,38 @@
+
+
+Es soll eine Zahl zwischen 5 bis 10 eingelesen werden. Solange man einen falschen Wert eingibt, 
+erscheint immer wieder das Prompt-Fenster. Gibt man z.B. eine 5 ein, dann wird dynamisch mit document.write() der 
+Text: „Von 5 bis –5 ohne die Null!“ ausgegeben.In einer Tabelle werden dann die Zahlen fallend von 5 bis –5 ausgeben. 
+Die Zahl Null darf nicht ausgeben werden. Ungerade und gerade Zahlen haben unterschiedliche Hintergrundfarben.
+
+<!doctype html>
+<html>
+	<head>
+		<title></title>	
+		<style>
+			.hg1 {background-color: #c0c0c0;}
+			.hg2 {background-color: #efefef;}		
+		</style>	
+	</head>
+	<body>		
+			<script>
+				s = "";			
+				do{
+					z = prompt("Bitte eine Zahl zwischen 5 und 10 eingeben!","");
+				} while (z < 5 || z > 10);
+				
+				document.write("<h3 align='center'>Von " + z + " bis -" + z + " ohne die Null!</h3><hr>");				
+				s +="<table align='center' border='1' cellpadding='10' cellspacing='0'>";
+				for(i=z; i >= -z; i--){
+					if(i!=0){
+					if(i%2 == 0) 
+						hg = "hg1";
+					else hg = "hg2";
+						s += "<tr><td class='" + hg + "'>" + (i) + "</td></tr>";			
+					}
+				}	
+				s += "</table><hr>";
+				document.write(s);			
+			</script>
+	</body>
+</html>
