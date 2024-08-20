@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>		
+	</head>
+	<body>		
+			<script>
+				
+				m = new Array();
+				m[0] = new Array();
+				m[0]['KNr']      = 1024;
+				m[0]['Nachname'] = 'Meier';
+				m[0]['Telefon']  = '+49221456432';
+				m[0]['Beruf']    = 'Metzger';
+				
+				m[1] = new Array();
+				m[1]['KNr']      = 1025;
+				m[1]['Nachname'] = 'Hansen';
+				m[1]['Telefon']  = '+492202567854';
+				m[1]['Beruf']    = 'Polizist';
+				
+				
+				s = "";
+				for(i=0; i < m.length; i++){
+					s +="<table align='center' border='1' cellpadding='10' cellspacing='0'>";						
+					s += "<tr><td colspan='2'>" + (i+1) + ". Kunde</td></tr>";
+					for(e in m[i]){
+						s += "<tr><td>" + (e) + "</td><td>" + m[i][e] + "</td></tr>";
+					}
+					s += "</table><hr>";
+				
+				}							
+				document.write(s);	
+		
+			</script>
+	</body>
+</html>
