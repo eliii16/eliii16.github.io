@@ -1,3 +1,6 @@
+//Es sollen 10 Zufallszahlen zwischen 1 und 30 erzeugt und danach nebeneinander in einer einzeiligen Tabelle nach der Größe 
+77sortiert angezeigt werden. Die Zufallszahlen, die erzeugt worden sind, dürfen nicht doppelt vorkommen.
+
 <!doctype html>
 <html>
 	<head>
